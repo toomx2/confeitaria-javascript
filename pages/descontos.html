@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Juvania Bolos - Descontos</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
 
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Sobre</a>
+        <a class="nav-link" href="#">Galeria</a>
+        <a class="nav-link" href="#">Produtos</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
     <div class="card-confeitaria">
         <img src="../img/bolo-brigadeiro.png" class="foto-bolo" alt="Bolo de Brigadeiro">
-        <span>🍰 Bolos </span>
-        <h1>Preço: <span class="valor-original">R$ 150,00</span></h1>
-        <p>Desconto de <strong>10%</strong> aplicado hoje!</p>
+        <span>🍰 Bolo de Brigadeiro </span>
+        <h1>Preço: <span class="valor-original">R$ 85</span></h1>
+        <p>Desconto de <strong>15%</strong> aplicado hoje!</p>
         
-        <a href="index.html" class="btn-voltar">Voltar</a>
+        <button class="botao-reset" id="btn-resetar">Voltar</button>
         <button class="botao-desconto" id="btn-calcular">Gerar Recibo</button>
 
-        <div id="recibo">
+        <div id="recibo" style="display: none;">
             <p>Valor do Desconto: <br><strong>R$ <span id="valor-desc"></span></strong></p>
             <p>Total a Pagar: <br><span class="destaque" id="total-final"></span></p>
         </div>

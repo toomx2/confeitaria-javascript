@@ -24,7 +24,7 @@ body {
 
 .card-confeitaria {
     background: white;
-    margin-top: 240px;
+    margin-top: 250px;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(141, 73, 37, 0.1);
@@ -44,7 +44,7 @@ h1 {
     text-decoration: line-through;
 }
 
-.btn-voltar {
+.botao-reset {
     background-color: #ca5050;
     color: white;
     border: none;
@@ -54,9 +54,10 @@ h1 {
     font-weight: bold;
     margin-top: 25px;
     transition: 0.3s;
+    display: none;
 }
 
-.btn-voltar:hover {
+.botao-reset:hover {
     background-color: #df1717;
     transform: scale(1.05);
 }
@@ -69,7 +70,7 @@ h1 {
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     transition: 0.3s;
 }
 
