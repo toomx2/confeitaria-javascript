@@ -1,3 +1,5 @@
+/* Card (Botão) - Bolo de Brigadeiro */
+
 const botao = document.getElementById('btn-calcular');
 const btnResetar = document.getElementById('btn-resetar');
 const areaRecibo = document.getElementById('recibo');
@@ -28,7 +30,7 @@ btnResetar.addEventListener('click', () => {
 });
 
 
-/* Card Bolo Maracujá */
+/* Card (Botão) - Bolo Maracujá */
 
 const botaoCalc = document.getElementById('btn-calcular1');
 const btnReset = document.getElementById('btn-resetar1');

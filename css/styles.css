@@ -12,22 +12,29 @@ body {
 
 body {
     background-image: url(../img/background.png);
-    background-color: #F2F2F2;
     color: #202020;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
     min-height: 100vh;
+    position: relative;
 }
 
-/* CSS - Página de desconto */
+/* CSS - Página de Desconto */
+
+.my-nav {
+    background: rgb(218, 205, 195);
+    border-radius: 15px;
+}
 
 .container-de-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    width: 100%;
 }
 
 .card-confeitaria {
@@ -38,7 +45,9 @@ body {
     box-shadow: 0 10px 25px rgba(141, 73, 37, 0.1);
     border: 2px solid #776767;
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 320px;
+    transition: margin 0.3s ease;
 }
 
 h1 {
@@ -107,34 +116,29 @@ h1 {
     font-weight: bold;
 }
 
-.foto-bolo1 {
-    background-color: rgb(233, 227, 227);
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .foto-bolo1:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(141, 73, 37, 0.2);
 }
 
-.foto-bolo {
-    background-color: rgb(235, 227, 227);
+.foto-bolo1, .foto-bolo {
     width: 100%;
-    height: 230px;
+    height: auto;
+    aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .foto-bolo:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(141, 73, 37, 0.2);
+}
+
+/* Responsividade */
+
+@media (min-width: 768px) {
+    .card-confeitaria {
+        margin-top: 135px;
+    }
 }
