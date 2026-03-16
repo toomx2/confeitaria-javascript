@@ -25,7 +25,9 @@ body {
 
 .my-nav {
     background: rgb(218, 205, 195);
-    border-radius: 15px;
+    border: 1px solid #ac9889;
+    border-radius: 8px;
+    margin-top: 5px;
 }
 
 .container-de-cards {
